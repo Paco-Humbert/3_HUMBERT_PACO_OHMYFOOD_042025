@@ -7,40 +7,54 @@
     <title>Oh My Food</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
 
   <body>
+    
+    <div class="loader"> <!-- Loader à mettre en place comme indiquer dans le cours-->
+    </div>
 
-    <header>
-      <a href="assets/images/ohmyfood.png" alt="Oh My Food"></a>
-      <span> Paris, Belleville </span>
+    <header class="header">
+      <a href="assets/images/ohmyfood.png" alt="Oh My Food"> Oh My Food</a> <!--Intégration du logo en Img ou string ?-->
     </header>
     
     <main>
 
-      <section>         <!-- Localisation -->
+      <section class="location">             <!-- Localisation -->
         <i class="fa-solid fa-location-dot"></i>
+        <span class="location__txt"> Paris, Belleville </span>
       </section>
 
-      <section>         <!-- presentation -->
+      <section class="functioning">         <!-- presentation -->
         <h2>Réservez le menu qui vous convient</h2>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-        <a href="#"> Explorer nos restaurants</a>     <!--Bouton-->
+        <p class="functioning__subtitile">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+        <a href="#" class=""> Explorer nos restaurants</a>     <!--Bouton-->
       </section>
 
-      <section> <!--Filtres-->
+      <section class="filter">               <!--Filtres-->
+
         <h2>Fonctionnement</h2>
 
         <ul>
 
-          <li>Choisissez un restaurant</li>
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>Choisissez un restaurant</span>
+          </li>
 
-          <li>Composez votre menu</li>
+          <li>
+            <i class="fa-solid fa-list"></i>
+            <span>Composez votre menu</span>
+          </li>
 
-          <li>Dégustez au restaurant</li>
+          <li>
+            <i class="fa-solid fa-store"></i>
+            <span>Dégustez au restaurant</span>
+          </li>
 
         </ul>
 
