@@ -4,39 +4,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/ohmyfood@2x.svg" type="image/svg+xml">
-    <title>Oh My Food</title>
+    <title>OhMyFood - La note enchantée</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
 
-  <footer> <!--Footer-->
-    <a href="assets/images/ohmyfood.png" alt="Oh My Food"></a>
-    <ul>
+  <body>
 
-      <li>
-        <a href="#"></a>
-          <!--Font awesome--> <!-- avant le texte car l'icone est en premier donc dispositon plus simple à mettre en place-->
-          Proposer un restaurant
-      </li>
+    <header class="header">
+      <a href="index.html" class="">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <a href="index.html" class="">Oh My Food</a>  <!-- Double href car arrow et "titre" ramènent à index !! -->
+    </header>
 
-      <li>
-        <a href="#"></a>
-          <!--Font awesome-->
-          Devenir Partenaire
-      </li>
+    <main>
+      <div class="banner">
+        <img src="assets/images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+      </div>
+      
+      <section class="">
 
-      <li>
-        <a href="#">Mentions légales</a>
-      </li>
+        <div class="">
 
-      <li>
-        <a href="#">Contact</a>
-      </li>
+          <div>
+            <h2>La note enchantée</h2>
+            <div class="">
+              <i class="fa-regular fa-heart"></i>  
+                <!--Regular + solid ?-->
+            </div>
+          </div>
 
-    </ul>
+
+
+          <div class="lists"> <!-- servira à flex entrées, plat dessert-->
+
+            <section class="list"> <!--reutilisée pour entrée, plat, dessert-->
+              <h3>Entrées</h3>
+              
+              <div class=""> <!-- pour les 3 menu, réutilisable pour plats, desserts-->
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Ravioles de foie gras </h4>
+                    <span>Accompagnées de leur crème à la truffe</span>
+                  </div>
+                  <span>25€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Caviar osciètre</h4>
+                    <span>Sur blini à la farine de blé noir</span>
+                  </div>
+                  <span>35€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Homard et espuma de potiron</h4>
+                    <span>Marinés aux zestes d'orange</span>
+                  </div>
+                  <span>20€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Foie gras de canard cuit entier</h4>
+                    <span>Confiture de figue et pain toasté</span>
+                  </div>
+                  <span>35€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+              </div>
+
+            </section>
+
+            <section class="list"> <!--reutilisée pour entrée, plat, dessert-->
+              <h3>Plats</h3>
+
+              <div class=""> <!-- pour les 3 menu, réutilisable pour plats, desserts-->
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Noix de coquilles Saint-Jacques</h4>
+                    <span>Sur lit de purée de céleri-rave</span>
+                  </div>
+                  <span>40€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Langoustine poêlée</h4>
+                    <span>Purée de patate douce</span>
+                  </div>
+                  <span>35€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Mijoté de queue de bœuf</h4>
+                    <span>Et riz sauvage aux zestes de citron</span>
+                  </div>
+                  <span>45€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+              </div>
+            </section>
+
+            <section class="list"> <!--reutilisée pour entrée, plat, dessert-->
+              <h3>Desserts</h3>
+
+              <div class=""> <!-- pour les 3 menu, réutilisable pour plats, desserts-->
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Macaron noisette et chocolat</h4>
+                    <span>Glace au caramel brun et sel de Guérande</span>
+                  </div>
+                  <span>18€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Baba au rhum revisité</h4>
+                    <span>Avec son coulis de citron</span>
+                  </div>
+                  <span>22€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class=""> <!-- textes, prix-->
+                    <h4>Tarte au citron meringuée</h4>
+                    <span>Déstructurée</span>
+                  </div>
+                  <span>23€</span>
+                  <div class=""> <!--Hover-->
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </article>
+
+              </div>
+
+            </section>
+          </div>
+
+        </div>
+        
+      </section>
+
+    </main>
+
+  </body>
+
+  <footer class="footer"> <!--Footer-->   
+
+    <div class="">
+
+      <a href="index.html" class="">OhMyFood</a>   <!-- changement car lien HTML et non pas vers une img-->
+
+      <ul class="footer__list">
+        <li class="">
+          <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+        </li>
+
+        <li>
+          <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir Partenaire</a>
+        </li>
+
+        <li>
+          <a href="#">Mentions légales</a>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+
+    </div>
+    <div class=""> <!-- bouton commander-->
+      <a href="#" class="">Commander</a>
+    </div>
 
   </footer>
+
+</body>
+
 </html>
