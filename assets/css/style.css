@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 
+a {
+  color: black;
+  text-decoration: none;
+}
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.css.map */
