@@ -33,36 +33,37 @@
       <section class="functioning">  <!-- presentation / fonctionnement -->
         <h2>Réservez le menu qui vous convient</h2>
         <p class="functioning__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-        <a href="#" class="btn"> Explorer nos restaurants</a>     <!--Bouton-->
+        <a href="#" class="btn"> Explorer nos restaurants</a>     
       </section>
       
 
       <section class="filter">               <!--Filtres-->
-                                              <!-- div à créer -->
-        <h2>Fonctionnement</h2>
+        <div class="bloc">    
+                                          
+          <h2>Fonctionnement</h2>
 
-        <ul class="">
+          <ul class="filter__ul">         <!-- essai SCSS directement avec UL mais rien donc mis en place de classe-->
 
-          <li class="">
-            <span class="">1</span>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <span>Choisissez un restaurant</span>
-          </li>
+            <li class="filter__li">
+              <span class="filter__number">1</span>
+              <i class="fa-solid fa-mobile-screen-button filter__dot"></i>
+              <span>Choisissez un restaurant</span>
+            </li>
 
-          <li class="">
-            <span class="">2</span>
-            <i class="fa-solid fa-list"></i>
-            <span>Composez votre menu</span>
-          </li>
+            <li class="filter__li">
+              <span class="filter__number">2</span>
+              <i class="fa-solid fa-list filter__dot"></i>
+              <span>Composez votre menu</span>
+            </li>
 
-          <li class="">
-            <span class="">3</span>
-            <i class="fa-solid fa-store"></i>
-            <span>Dégustez au restaurant</span>
-          </li>
+            <li class="filter__li">
+              <span class="filter__number">3</span>
+              <i class="fa-solid fa-store filter__dot"></i>
+              <span>Dégustez au restaurant</span>
+            </li>
 
-        </ul>
-
+          </ul>
+        </div> 
       </section>
 
       <section class="restaurants">     <!--Restaurants-->

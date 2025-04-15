@@ -3,7 +3,7 @@
     height: 50px;
     padding: 0;
     @include flexbox-center;
-    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    @include box-shadow-1;
 
     &__txt {
         font-size: 16px;
@@ -18,14 +18,57 @@
 
 .functioning { 
     text-align: center;
-    padding: 40px 25px 40px 25px;
-    
+    padding: 40px 25px 70px 25px;
     
 
     &__subtitle {
         font-size: 18px;
         font-weight: 300;
-        padding: 10px 0 30px 0;
-       
+        padding: 10px 0 20px 0;
     }
 }
+
+.filter{
+    background-color: $color-secondary;
+
+    &__ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px 0 0 0;
+        margin: 0;
+    }
+
+    &__li {
+        font-weight: 500;
+        @include box-shadow-1;
+        border-radius: 20px;
+        padding: 25px 35px 25px 0;
+        margin: 0 14px;
+        background-color: #eaeaea;
+        width: auto;
+        margin: 0 0 0 14px;
+    }
+
+    &:hover {
+        .filter__dot {
+            color: $color-primary;
+        }
+    }
+
+    &__number {
+        background-color: $color-primary;
+        color: $color-secondary;
+        border-radius: 50px;
+        padding: 5px 10px 5px 10px;
+    }
+
+    &__dot {
+        color: #7e7e7e;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+}
+
