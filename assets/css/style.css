@@ -68,11 +68,16 @@ section {
 .filter__ul {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   gap: 20px;
   padding: 20px 0 0 0;
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .filter__ul {
+    flex-direction: column;
+  }
 }
 .filter__li {
   font-weight: 500;
@@ -97,6 +102,11 @@ section {
   color: #7e7e7e;
   font-size: 20px;
   margin-right: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .btn {

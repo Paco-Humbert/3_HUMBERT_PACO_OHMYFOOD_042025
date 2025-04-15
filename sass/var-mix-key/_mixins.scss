@@ -11,3 +11,15 @@
 @mixin box-shadow-2 {
     box-shadow: 0px 4px 4px rgba(0,0,0,.01);
 }
+
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
