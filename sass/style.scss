@@ -1,7 +1,11 @@
-@import "var-mix-key/variables";
-@import "font-other/font";
-@import "font-other/other";
+@import"var-mix-key/_mixins.scss";  
+@import "var-mix-key/_variables.scss";
+@import "font-other/_font.scss";
+@import "font-other/_other.scss";
 @import "structure/_header.scss";
-@import "structure/header.scss";
+@import "content/_main.scss";
+@import "content/_menu.scss";
+@import "bouton/_btn.scss"
+
 
 

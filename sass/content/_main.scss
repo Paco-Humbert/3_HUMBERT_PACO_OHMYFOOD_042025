@@ -1,0 +1,31 @@
+.location {
+    background-color: #eaeaea;
+    height: 50px;
+    padding: 0;
+    @include flexbox-center;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+
+    &__txt {
+        font-size: 16px;
+        font-weight: 500px;
+    }
+
+    &__dot {
+        margin-right: 15px;
+    }
+
+}
+
+.functioning { 
+    text-align: center;
+    padding: 40px 25px 40px 25px;
+    
+    
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 300;
+        padding: 10px 0 30px 0;
+       
+    }
+}
