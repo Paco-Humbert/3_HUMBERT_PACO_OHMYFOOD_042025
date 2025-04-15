@@ -16,6 +16,8 @@
 
 }
 
+/*** Presentation / Fonctionnement ***/
+
 .functioning { 
     text-align: center;
     padding: 40px 25px 70px 25px;
@@ -27,6 +29,8 @@
         padding: 10px 0 20px 0;
     }
 }
+
+/*** Filtres ***/
 
 .filter{
     background-color: $color-secondary;
@@ -76,7 +80,46 @@
     }
 }
 
+/*** Restaurants ***/
+
 .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 20px;
+    padding: 25px 0 0 0;
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .card {
+        
+        background-color: $color-white;
+        position: relative;
+        border-radius: 25px;
+
+    
+
+        &__img {
+            display: flex;
+            object-fit: cover;
+            width: 251px;
+            height: 100%;
+            border-radius: 25px;
+            display: block;
+        }
+        
+
+        &__fig {
+            background-color: $color-white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px 20px 15px;
+
+        }
+    }
 }
+

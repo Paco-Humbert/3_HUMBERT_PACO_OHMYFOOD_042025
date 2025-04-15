@@ -2,6 +2,9 @@ body {
     margin:0;
     padding:0;
     background-color: #EAEAEA;
+    @include mobile {
+        max-width: 100%;
+    }
 }
 
 a {
@@ -15,4 +18,8 @@ h2 {
 
 section {
     padding: 50px 20px;
+}
+
+img {
+    max-width: 100%;
 }

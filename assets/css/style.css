@@ -7,6 +7,11 @@ body {
   padding: 0;
   background-color: #EAEAEA;
 }
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+}
 
 a {
   color: black;
@@ -19,6 +24,10 @@ h2 {
 
 section {
   padding: 50px 20px;
+}
+
+img {
+  max-width: 100%;
 }
 
 .header {
@@ -52,6 +61,7 @@ section {
   margin-right: 15px;
 }
 
+/*** Presentation / Fonctionnement ***/
 .functioning {
   text-align: center;
   padding: 40px 25px 70px 25px;
@@ -62,6 +72,7 @@ section {
   padding: 10px 0 20px 0;
 }
 
+/*** Filtres ***/
 .filter {
   background-color: #F6F6F6;
 }
@@ -104,9 +115,40 @@ section {
   margin-right: 20px;
 }
 
+/*** Restaurants ***/
 .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  padding: 25px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+.cards .card {
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 25px;
+}
+.cards .card__img {
   display: flex;
-  flex-wrap: wrap;
+  object-fit: cover;
+  width: 251px;
+  height: 100%;
+  border-radius: 25px;
+  display: block;
+}
+.cards .card__fig {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px 20px 15px;
 }
 
 .btn {
