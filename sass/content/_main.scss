@@ -83,36 +83,69 @@
 /*** Restaurants ***/
 
 .restaurants {
-    display: flex;
-    flex-direction: row;
-
-    .cards {
-
+    
+}
+.cards {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 20px;
+    padding: 25px 0 0 0;
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
-    .card {
-            
-        background-color: $color-white;
-        position: relative;
-        border-radius: 25px;
+}    
+.card {
+    background-color: $color-white;
+    position: relative;
+    border-radius: 15px;
+    @include box-shadow-2;
+    
+    
 
-        &__img {
-            display: flex;
+    &__img {
+        display: flex;
+
+        & img {
+            height: 251px;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
             object-fit: cover;
-            width: 251px;
-            height: 100%;
-            border-radius: 25px;
-            display: block;
         }
+    }
 
-        &__fig {
-            background-color: $color-white;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px 20px 15px;
-        }
-        
+    &__new {
+        position: absolute;
+        background-color: $color-tertiary;
+        color: #008766;
+        border-radius: 3px;
+        font-size: 0.875rem;
+        padding: 8px;
+    }
+
+    &__fig {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px 10px 20px;
+    }
+
+    &__title {
+        font-size: 1.125rem;
+        margin: 0 0 5px 0;
+    }
+
+    &__subtitle {
+        font-size: 1.063rem;
+        font-weight: 300;
+    }
+
+    &__dot {
+        font-size: 22px;   /*** essayer avec H,W mais trop petit ***/
     }
 }
+
+
 
