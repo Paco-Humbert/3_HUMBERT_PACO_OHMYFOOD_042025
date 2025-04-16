@@ -36,7 +36,6 @@
     background-color: $color-secondary;
 
     &__ul {
-        list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -82,9 +81,7 @@
 
 /*** Restaurants ***/
 
-.restaurants {
-    
-}
+
 .cards {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
