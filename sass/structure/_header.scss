@@ -1,7 +1,6 @@
 
 .header {
     height: 63px;
-    
     @include flexbox-center;
     position: relative;
     background-color: $color-white;
@@ -10,5 +9,6 @@
     &__logo {
         font-family: "Shrikhand", cursive;
         font-size: 36px;
+        color: black;
     }
 }

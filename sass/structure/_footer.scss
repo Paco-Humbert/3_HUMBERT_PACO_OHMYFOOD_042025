@@ -1,8 +1,28 @@
 .footer {
     background-color: $color-grey;
-    padding: 30px;
-
-    & a {
-        color: $color-white;
-    }
+    padding: 30px 30px;
 }
+    
+
+.footer-title {
+    font-size: 1.125rem;
+    font-family: $font-title;
+}
+
+a {
+    color: $color-white;
+        
+        
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-dot {
+    margin-right: 10px;
+}    
+    
