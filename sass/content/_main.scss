@@ -82,24 +82,18 @@
 
 /*** Restaurants ***/
 
-.cards {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 20px 20px;
-    padding: 25px 0 0 0;
-    @include mobile {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
+.restaurants {
+    display: flex;
+    flex-direction: row;
 
+    .cards {
+
+    }
     .card {
-        
+            
         background-color: $color-white;
         position: relative;
         border-radius: 25px;
-
-    
 
         &__img {
             display: flex;
@@ -109,7 +103,6 @@
             border-radius: 25px;
             display: block;
         }
-        
 
         &__fig {
             background-color: $color-white;
@@ -118,8 +111,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 40px 20px 15px;
-
         }
+        
     }
 }
 

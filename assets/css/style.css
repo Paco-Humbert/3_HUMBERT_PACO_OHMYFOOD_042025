@@ -116,25 +116,16 @@ img {
 }
 
 /*** Restaurants ***/
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px 20px;
-  padding: 25px 0 0 0;
+.restaurants {
+  display: flex;
+  flex-direction: row;
 }
-@media screen and (max-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-}
-.cards .card {
+.restaurants .card {
   background-color: #FFFFFF;
   position: relative;
   border-radius: 25px;
 }
-.cards .card__img {
+.restaurants .card__img {
   display: flex;
   object-fit: cover;
   width: 251px;
@@ -142,7 +133,7 @@ img {
   border-radius: 25px;
   display: block;
 }
-.cards .card__fig {
+.restaurants .card__fig {
   background-color: #FFFFFF;
   display: flex;
   flex-direction: row;
