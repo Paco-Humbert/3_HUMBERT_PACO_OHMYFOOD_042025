@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/ohmyfood@2x.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/assets/images/ohmyfood@2x.svg" type="image/svg+xml">
     <title>OhMyFood - La palette du goût</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,44 +16,48 @@
   <body>
 
     <header class="header">
-      <a href="index.html" class="">
+      <a href="/index.html" class="header__dot">
         <i class="fa-solid fa-arrow-left"></i>
       </a>
-      <a href="index.html" class="">Oh My Food</a>  <!-- Double href car arrow et "titre" ramènent à index !! -->
+      <a href="/index.html" class="header__logo">ohmyfood</a>  <!-- Double href car arrow et "titre" ramènent à index !! -->
     </header>
 
     <main>
-      <div class="banner">
-        <img src="assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+      <div>
+        <img class="banner" src="/assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
       </div>
 
-      <section class="">
+      <section class="menu">
 
-        <div class="">
+        <div class="bloc">
 
-          <div>
+          <div class="menu__title">
+
             <h2>La palette du goût</h2>
-            <div class="">
+
+            <div class="menu_dot heart__dot">
               <i class="fa-regular fa-heart"></i>  
                 <!--Regular + solid ?-->
             </div>
+
           </div>
 
 
 
-          <div class="lists"> <!-- servira à flex entrées, plat dessert-->
+          <div class="menu__main">                        <!-- servira à flex entrées, plat dessert-->
 
-            <section class="list"> <!--reutilisée pour entrée, plat, dessert-->
+            <section class="menu__list">                  <!--reutilisée pour entrée, plat, dessert-->
+              
               <h3>Entrées</h3>
               
-              <div class=""> <!-- pour les 3 menu, réutilisable pour plats, desserts-->
+              <div class="general">                  <!-- pour les 3 menu, réutilisable pour plats, desserts-->
 
-                <article class="">  <!--contenu du menu flex, padding, margin, etc...-->
-                  <div class=""> <!-- textes, prix-->
-                    <h4>Fricassée d'escargots</h4>
-                    <span>Au piment d'Espelette</span>
+                <article class="article">            <!--contenu du menu flex, padding, margin, etc...-->
+                  <div class="content">               <!-- textes, prix-->
+                    <h4 class="list__title">Fricassée d'escargots</h4>
+                    <span class="list__subtitle">Au piment d'Espelette</span>
                   </div>
-                  <span>25€</span>
+                  <span class="menu__price">25€</span>
                   <div class=""> <!--Hover-->
                     <i class="fa-solid fa-circle-check"></i>
                   </div>
@@ -176,33 +180,27 @@
 
   </body>
 
-  <footer class="footer"> <!--Footer-->   
+  <footer class="footer">             <!--Footer-->   
 
-    <div class="">
+    <div>
 
-      <a href="index.html" class="">OhMyFood</a>   <!-- changement car lien HTML et non pas vers une img-->
+      <a href="index.html" class="footer-title">ohmyfood</a>   <!-- changement car lien HTML et non pas vers une img-->
 
       <ul class="footer__list">
-        <li class="">
-          <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-        </li>
-
         <li>
-          <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir Partenaire</a>
+          <a href="#"><i class="fa-solid fa-utensils footer-dot"></i>Proposer un restaurant</a>
         </li>
-
+        <li>
+          <a href="#"><i class="fa-solid fa-handshake-angle footer-dot"></i>Devenir Partenaire</a>
+        </li>
         <li>
           <a href="#">Mentions légales</a>
         </li>
-
         <li>
           <a href="#">Contact</a>
         </li>
       </ul>
 
-    </div>
-    <div class=""> <!-- bouton commander-->
-      <a href="#" class="">Commander</a>
     </div>
 
   </footer>

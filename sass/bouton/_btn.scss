@@ -5,3 +5,10 @@
     padding: 15px 20px;
     margin-top: 20px;
 }
+
+.heart {
+    &__dot {
+        font-size: 22px;   /*** essayer avec H,W mais trop petit ***/
+        
+    }
+}
