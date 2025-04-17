@@ -4,6 +4,7 @@
     color: $color-secondary;
     padding: 15px 20px;
     margin-top: 20px;
+    @include box-shadow-1;
 }
 
 .heart {
