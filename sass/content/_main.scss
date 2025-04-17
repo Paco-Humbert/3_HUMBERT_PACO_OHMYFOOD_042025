@@ -40,7 +40,7 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 20px;
-        padding: 20px 0 0 0;
+        padding: 28px 0 0 0;
         margin: 0;
         @include mobile {
             flex-direction: column;
@@ -49,8 +49,9 @@
     }
 
     &__li {
+        
         font-weight: 500;
-        @include box-shadow-1;
+        @include box-shadow-2;
         border-radius: 20px;
         padding: 25px 35px 25px 0;
         margin: 0 14px;
@@ -113,12 +114,15 @@
     }
 
     &__new {
+        
         position: absolute;
         background-color: $color-tertiary;
         color: #008766;
         border-radius: 3px;
         font-size: 0.875rem;
         padding: 8px;
+        top: 10px;
+        left: 10px;
     }
 
     &__fig {

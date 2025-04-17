@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -24,7 +25,7 @@ h2 {
 }
 
 section {
-  padding: 50px 20px;
+  padding: 30px 20px;
 }
 
 img {
@@ -51,6 +52,9 @@ ul {
 .header__dot {
   font-weight: 300;
   color: black;
+  position: absolute;
+  font-size: 1.125rem;
+  left: 20px;
 }
 
 .location {
@@ -90,7 +94,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px 0 0 0;
+  padding: 28px 0 0 0;
   margin: 0;
 }
 @media screen and (max-width: 768px) {
@@ -100,7 +104,7 @@ ul {
 }
 .filter__li {
   font-weight: 500;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 25px 35px 25px 0;
   margin: 0 14px;
@@ -142,7 +146,7 @@ ul {
   background-color: #FFFFFF;
   position: relative;
   border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.01);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 .card__img {
   display: flex;
@@ -160,6 +164,8 @@ ul {
   border-radius: 3px;
   font-size: 0.875rem;
   padding: 8px;
+  top: 10px;
+  left: 10px;
 }
 .card__fig {
   display: flex;
@@ -186,14 +192,14 @@ ul {
 .menu {
   border-radius: 20px 20px 0 0;
   background-color: #F6F6F6;
-  margin-top: -60px;
+  margin-top: -50px;
   position: relative;
 }
 .menu__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px 0 0;
+  padding: 0 20px 0 0;
   font-family: "Shrikhand", cursive;
 }
 .menu h2 {
@@ -205,8 +211,9 @@ ul {
   align-items: space-between;
 }
 .menu__list {
-  width: 100%;
+  padding: 0;
   overflow: hidden;
+  margin-left: 0;
 }
 .menu h3 {
   font-size: 1rem;
@@ -231,8 +238,35 @@ ul {
   justify-content: space-between;
   background-color: #FFFFFF;
   overflow: hidden;
-  border-radius: 12px;
-  margin-bottom: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 10px 20px 10px 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.article h4 .article__content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.article h4 {
+  margin: 0 0 4px 0;
+  font-size: 1.125rem;
+}
+.article__subtitle { /*** à voir car je ne vois pas de réel changement ***/
+  font-weight: 300;
+  font-size: 0.94rem; /***  15.09 sur la maquette, 15 ou valeur exacte ? ***/
+}
+.article__price {
+  font-weight: 500;
+  font-size: 0.94rem;
+}
+
+.btn {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 186px;
+  height: 20px;
 }
 
 .btn {
@@ -244,7 +278,8 @@ ul {
 }
 
 .heart__dot {
-  font-size: 22px; /*** essayer avec H,W mais trop petit ***/
+  font-size: 22px;
+  font-weight: 200; /*** essayer avec H,W mais trop petit ***/
 }
 
 .bloc {
