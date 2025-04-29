@@ -59,21 +59,14 @@
         }
     }
 
-    &__general {  /** création**/
-        display: flex;
-        flex-direction: row;
-        align-content: space-between;
-    }
+    
 }
 
-.general {  /** création**/
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-}
+
 
 
 .article {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -98,14 +91,19 @@
         font-size: 1.125rem;
     }
 
-    &__subtitle {   /*** à voir car je ne vois pas de réel changement ***/
+    &__subtitle {   
         font-weight: 300;
-        font-size: 0.94rem;  /***  15.09 sur la maquette, 15 ou valeur exacte ? ***/
+        font-size: 0.94rem;
+        text-overflow: ellipsis;
+        overflow: hidden;  
+        white-space: nowrap;
+        
     }
 
     &__price {
         font-weight: 500;
         font-size: 0.94rem;
+        transition: 1s ease-in-out;
     }
 
     &__animation {
@@ -127,7 +125,7 @@
         transition: 1s ease-in-out;
     }
 
-    &:hover {
+    &:hover, &:active, &:focus {
         cursor: pointer;
 
         .article__price {

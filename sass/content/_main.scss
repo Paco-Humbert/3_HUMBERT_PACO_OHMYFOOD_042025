@@ -57,10 +57,10 @@
         margin: 0 14px;
         background-color: #eaeaea;
         width: auto;
-        margin: 0 0 0 14px;
+        
     }
 
-    &:hover {
+    &:hover, &:active, &:focus {
         .filter__dot {
             color: $color-primary;
         }
@@ -71,7 +71,7 @@
         color: $color-secondary;
         border-radius: 50px;
         padding: 5px 10px 5px 10px;
-        
+        margin-left: -15px;
         
     }
 

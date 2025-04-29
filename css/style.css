@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -110,9 +109,8 @@ ul {
   margin: 0 14px;
   background-color: #eaeaea;
   width: auto;
-  margin: 0 0 0 14px;
 }
-.filter:hover .filter__dot {
+.filter:hover .filter__dot, .filter:active .filter__dot, .filter:focus .filter__dot {
   color: #9356DC;
 }
 .filter__number {
@@ -120,6 +118,7 @@ ul {
   color: #F6F6F6;
   border-radius: 50px;
   padding: 5px 10px 5px 10px;
+  margin-left: -15px;
 }
 .filter__dot {
   color: #7e7e7e;
@@ -230,19 +229,9 @@ ul {
   left: 0;
   top: 24px;
 }
-.menu__general { /** création**/
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-}
-
-.general { /** création**/
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}
 
 .article {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -264,13 +253,17 @@ ul {
   margin: 0 0 4px 0;
   font-size: 1.125rem;
 }
-.article__subtitle { /*** à voir car je ne vois pas de réel changement ***/
+.article__subtitle {
   font-weight: 300;
-  font-size: 0.94rem; /***  15.09 sur la maquette, 15 ou valeur exacte ? ***/
+  font-size: 0.94rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .article__price {
   font-weight: 500;
   font-size: 0.94rem;
+  transition: 1s ease-in-out;
 }
 .article__animation {
   position: absolute;
@@ -288,16 +281,16 @@ ul {
   transform: rotate(0deg);
   transition: 1s ease-in-out;
 }
-.article:hover {
+.article:hover, .article:active, .article:focus {
   cursor: pointer;
 }
-.article:hover .article__price {
+.article:hover .article__price, .article:active .article__price, .article:focus .article__price {
   margin-right: 60px;
 }
-.article:hover .article__animation {
+.article:hover .article__animation, .article:active .article__animation, .article:focus .article__animation {
   transform: translateX(0);
 }
-.article:hover .article__icon {
+.article:hover .article__icon, .article:active .article__icon, .article:focus .article__icon {
   transform: rotate(360deg);
 }
 
@@ -311,7 +304,6 @@ ul {
 
 .btn {
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  background-color: white;
   border-radius: 50px;
   color: #F6F6F6;
   padding: 15px 20px;
@@ -319,10 +311,10 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
-.btn:hover {
+.btn:hover, .btn:active, .btn:focus {
   background-color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: white;
+  opacity: 0.7;
 }
 
 .heart__dot {
