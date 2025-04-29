@@ -1,10 +1,18 @@
 .btn {
-    background-image: $color-gradient;
+    background: $color-gradient;
+    background-color: lighten($color-white, 100%);
     border-radius: 50px;
     color: $color-secondary;
     padding: 15px 20px;
     margin-top: 20px;
-    @include box-shadow-1;
+    @include box-shadow-2;
+    transition: .3s;
+
+    &:hover {
+        background-color: $color-white;
+        @include box-shadow-1;
+        background-color: lighten($color-white, 100%);
+    }
 }
 
 .heart {

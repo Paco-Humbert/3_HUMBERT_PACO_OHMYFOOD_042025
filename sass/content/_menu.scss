@@ -38,6 +38,7 @@
         padding: 0;
         overflow: hidden;
         margin-left: 0; 
+        
 
     }
 
@@ -57,6 +58,18 @@
             top: 24px;
         }
     }
+
+    &__general {  /** création**/
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+    }
+}
+
+.general {  /** création**/
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 
 
@@ -71,8 +84,10 @@
     margin-bottom: 10px;
     padding: 10px 20px 10px 10px;
     @include box-shadow-2;
+    
 
     & h4 &__content {
+        display: flex;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
@@ -91,6 +106,41 @@
     &__price {
         font-weight: 500;
         font-size: 0.94rem;
+    }
+
+    &__animation {
+        
+        position: absolute;
+        background-color: $color-tertiary;
+        color: $color-white;
+        font-size: 20px;
+        padding: 22.5px 20px;
+        border-radius: 0 15px 15px 0;
+        right: 0;
+        top: 0;
+        transform: translateX(60px);
+        transition: 1s ease-in-out;
+    }
+
+    &__icon {
+        transform: rotate(0deg);
+        transition: 1s ease-in-out;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .article__price {
+            margin-right: 60px;
+        }
+
+        .article__animation {
+            transform: translateX(0);
+        }
+
+        .article__icon {
+            transform: rotate(360deg);
+        }
     }
 }
 
