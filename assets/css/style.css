@@ -224,7 +224,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .menu h2 {
-    margin-right: 20px;
+    margin-right: 50px;
   }
 }
 .menu__main {
@@ -358,31 +358,28 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.btn__heart__btn__heart__empty, .btn__heart__btn__heart__full {
-  position: absolute;
-  font-size: 24px;
-  transition: transform 0.3s ease;
-}
 .btn__heart__empty {
   position: absolute;
-  color: #9356DC;
+  color: black;
+  position: absolute;
+  font-size: 24px;
+  margin-right: 30px;
 }
 .btn__heart__full {
-  -webkit-background-clip: text;
   position: absolute;
   background-color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
   color: transparent;
-  transform: scale(0);
+  opacity: 0;
   transition: transform 300ms;
 }
 .btn__heart:hover, .btn__heart:active, .btn__heart:focus {
   cursor: pointer;
 }
-.btn__heart:hover__btn__heart__full, .btn__heart:active__btn__heart__full, .btn__heart:focus__btn__heart__full {
+.btn__heart:hover__full, .btn__heart:active__full, .btn__heart:focus__full {
   transform: scale(1);
 }
-.btn__heart:hover__btn__heart__empty, .btn__heart:active__btn__heart__empty, .btn__heart:focus__btn__heart__empty {
+.btn__heart:hover__empty, .btn__heart:active__empty, .btn__heart:focus__empty {
   background-color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
   color: transparent;

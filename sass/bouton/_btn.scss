@@ -21,6 +21,8 @@
         font-weight: 200;   /*** essayer avec H,W mais trop petit ***/
         
     }
+    
+    
 }
 
 .btn__heart {
@@ -28,34 +30,33 @@
     @include flexbox-center;
 
     
-        &__btn__heart__empty,
-        &__btn__heart__full {
-        position: absolute;
-        font-size: 24px;
-        transition: transform 0.3s ease;
-        }
+        
 
         &__empty {
             position: absolute;
-            color: $color-primary;
+            color: black;
+            position: absolute;
+            font-size: 24px;
+            margin-right: 30px;
+           
         }
 
         &__full {
-            -webkit-background-clip: text;
+            
             position: absolute;
             background-color: $color-gradient;
             background-clip: text;
             color: transparent;
-            transform: scale(0);
+            opacity: 0;
             transition: transform 300ms;
         }
         
         &:hover, &:active, &:focus {
             cursor: pointer;
-            &__btn__heart__full {
+            &__full {
                 transform: scale(1);
             }
-            &__btn__heart__empty {
+            &__empty {
                 background-color: $color-gradient;
                 background-clip: text;
                 color: transparent;
