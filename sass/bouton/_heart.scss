@@ -1,0 +1,20 @@
+.btn__heart {
+
+    &__full {
+        background-color: $color-gradient;
+        color: transparent;
+        transform: scale(0);
+        transition: transform 500ms;
+    }
+    
+    &:hover {
+        cursor: pointer;
+        .btn_heart__full {
+            transform: scale(1);
+        }
+        .btn_heart__empty {
+            background-color: $color-gradient;
+            color: transparent;
+        }
+    }
+}
