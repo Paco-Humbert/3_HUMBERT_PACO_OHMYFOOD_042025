@@ -199,6 +199,13 @@ ul {
   margin-top: -50px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    justify-content: center;
+    display: flex;
+    margin: -20px 90px 0 90px;
+  }
+}
 .menu__title {
   display: flex;
   justify-content: space-between;
@@ -206,8 +213,18 @@ ul {
   padding: 0 20px 0 0;
   font-family: "Shrikhand", cursive;
 }
+@media screen and (min-width: 768px) {
+  .menu__title {
+    justify-content: center;
+  }
+}
 .menu h2 {
   font-size: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .menu h2 {
+    margin-right: 20px;
+  }
 }
 .menu__main {
   display: flex;
@@ -218,6 +235,11 @@ ul {
   padding: 0;
   overflow: hidden;
   margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .menu__list {
+    width: 634px;
+  }
 }
 .menu h3 {
   font-size: 1rem;

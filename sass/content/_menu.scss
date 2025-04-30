@@ -12,6 +12,11 @@
     background-color: $color-secondary;
     margin-top: -50px;
     position: relative;
+    @include desktop {
+        justify-content: center;
+        display: flex;
+        margin: -20px 90px 0 90px;
+    }
     
 
     &__title {
@@ -20,12 +25,17 @@
         align-items: center;
         padding: 0 20px 0 0;
         font-family: $font-title;
+        @include desktop {
+            justify-content: center;
+        }
         
     }
 
     h2 {
         font-size: 1.75rem;
-        
+        @include desktop {
+            margin-right: 20px;
+        }
     }
 
     &__main {
@@ -39,6 +49,9 @@
         padding: 0;
         overflow: hidden;
         margin-left: 0; 
+        @include desktop {
+            width: 634px;
+        }
         
         
 
