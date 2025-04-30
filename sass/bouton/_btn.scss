@@ -22,3 +22,43 @@
         
     }
 }
+
+.btn__heart {
+    position: relative;
+    @include flexbox-center;
+
+    
+        &__btn__heart__empty,
+        &__btn__heart__full {
+        position: absolute;
+        font-size: 24px;
+        transition: transform 0.3s ease;
+        }
+
+        &__empty {
+            position: absolute;
+            color: $color-primary;
+        }
+
+        &__full {
+            -webkit-background-clip: text;
+            position: absolute;
+            background-color: $color-gradient;
+            background-clip: text;
+            color: transparent;
+            transform: scale(0);
+            transition: transform 300ms;
+        }
+        
+        &:hover, &:active, &:focus {
+            cursor: pointer;
+            &__btn__heart__full {
+                transform: scale(1);
+            }
+            &__btn__heart__empty {
+                background-color: $color-gradient;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+}    
