@@ -28,38 +28,40 @@
 .btn__heart {
     position: relative;
     @include flexbox-center;
-
     
-        
+    
+}    
 
-        &__empty {
-            position: absolute;
-            color: black;
-            position: absolute;
-            font-size: 24px;
-            margin-right: 30px;
-           
-        }
-
-        &__full {
-            
-            position: absolute;
+.btn__heart__empty {
+    position: absolute;
+    color: black;
+    position: absolute;
+    font-size: 24px;
+    margin-right: 30px;
+    transition:  300ms; 
+    
+        &:hover, &:active, &:focus {
+            cursor: pointer;
+            &__empty {
             background-color: $color-gradient;
             background-clip: text;
             color: transparent;
-            opacity: 0;
-            transition: transform 300ms;
         }
-        
-        &:hover, &:active, &:focus {
-            cursor: pointer;
-            &__full {
-                transform: scale(1);
-            }
-            &__empty {
-                background-color: $color-gradient;
-                background-clip: text;
-                color: transparent;
-            }
+    }
+}
+.btn__heart__full {         
+    position: absolute;
+    background-color: $color-gradient;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition:  300ms;
+    margin-right: 30px;
+
+    &:hover, &:active, &:focus {
+        cursor: pointer;
+        &__full {
+            opacity: 1;
         }
-}    
+    }
+}

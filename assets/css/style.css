@@ -258,7 +258,24 @@ ul {
   top: 24px;
 }
 
+.menu__list .general .article {
+  animation: menu-list 1s ease both;
+}
+.menu__list .general .article:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.menu__list .general .article:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.menu__list .general .article:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.menu__list .general .article:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
 .article {
+  animation: menu-list 1s ease both;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -270,6 +287,18 @@ ul {
   margin-bottom: 10px;
   padding: 10px 20px 10px 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.article:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.article:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.article:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.article:nth-child(4) {
+  animation-delay: 0.8s;
 }
 .article h4 .article__content {
   display: flex;
@@ -358,31 +387,38 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
 .btn__heart__empty {
   position: absolute;
   color: black;
   position: absolute;
   font-size: 24px;
   margin-right: 30px;
+  transition: 300ms;
 }
+.btn__heart__empty:hover, .btn__heart__empty:active, .btn__heart__empty:focus {
+  cursor: pointer;
+}
+.btn__heart__empty:hover__empty, .btn__heart__empty:active__empty, .btn__heart__empty:focus__empty {
+  background-color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  color: transparent;
+}
+
 .btn__heart__full {
   position: absolute;
   background-color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
   color: transparent;
   opacity: 0;
-  transition: transform 300ms;
+  transition: 300ms;
+  margin-right: 30px;
 }
-.btn__heart:hover, .btn__heart:active, .btn__heart:focus {
+.btn__heart__full:hover, .btn__heart__full:active, .btn__heart__full:focus {
   cursor: pointer;
 }
-.btn__heart:hover__full, .btn__heart:active__full, .btn__heart:focus__full {
-  transform: scale(1);
-}
-.btn__heart:hover__empty, .btn__heart:active__empty, .btn__heart:focus__empty {
-  background-color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  background-clip: text;
-  color: transparent;
+.btn__heart__full:hover__full, .btn__heart__full:active__full, .btn__heart__full:focus__full {
+  opacity: 1;
 }
 
 .bloc {

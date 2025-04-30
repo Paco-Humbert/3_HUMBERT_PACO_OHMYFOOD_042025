@@ -49,8 +49,7 @@
     &__list {
         padding: 0;
         overflow: hidden;
-        margin-left: 0; 
-        
+        margin-left: 0;
         @include desktop {
             width: 634px;
         }
@@ -79,8 +78,14 @@
     
 }
 
+.menu__list .general .article {
+    animation: menu-list 1s ease both;
+    @include menu-delay;
+}
 
 .article {
+    animation: menu-list 1s ease both;
+    @include menu-delay;
     position: relative;
     display: flex;
     flex-direction: row;
