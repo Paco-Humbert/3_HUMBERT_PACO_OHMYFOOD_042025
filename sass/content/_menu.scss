@@ -12,6 +12,7 @@
     background-color: $color-secondary;
     margin-top: -50px;
     position: relative;
+    
 
     &__title {
         display: flex;
@@ -38,6 +39,7 @@
         padding: 0;
         overflow: hidden;
         margin-left: 0; 
+        
         
 
     }
@@ -78,12 +80,15 @@
     padding: 10px 20px 10px 10px;
     @include box-shadow-2;
     
+    
 
     & h4 &__content {
         display: flex;
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
+        max-width: 100%;
+        flex: 1;
+        min-width: 0;
     }
 
     & h4 {
