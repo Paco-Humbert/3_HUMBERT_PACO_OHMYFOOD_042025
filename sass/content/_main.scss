@@ -1,3 +1,27 @@
+.loader {
+    background: rgba($color-white, 0.95);
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    @include flexbox-center;
+    
+    
+    &__bloc {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__point {
+        background-color: $color-primary;
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        margin: 10px;
+        
+    }
+}
+
 .location {
     background-color: #eaeaea;
     height: 50px;

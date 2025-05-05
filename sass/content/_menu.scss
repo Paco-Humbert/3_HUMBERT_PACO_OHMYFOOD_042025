@@ -1,3 +1,5 @@
+
+
 .banner {
 
     & img {
@@ -78,12 +80,11 @@
     
 }
 
-.menu__main {
-    animation: menu-list 1s ease both;
-    @include menu-delay;
-}
+
 
 .article {
+
+    
     animation: menu-list 1s ease both;
     @include menu-delay;
     position: relative;
