@@ -128,7 +128,7 @@
     &__price {
         font-weight: 500;
         font-size: 0.94rem;
-        transition: 1s ease-in-out;
+        transition: .6s ease-in-out;
     }
 
     &__animation {
@@ -142,12 +142,12 @@
         right: 0;
         top: 0;
         transform: translateX(60px);
-        transition: 1s ease-in-out;
+        transition: .6s ease-in-out;
     }
 
     &__icon {
         transform: rotate(0deg);
-        transition: 1s ease-in-out;
+        transition: .6s ease-in-out;
     }
 
     &:hover, &:active, &:focus {

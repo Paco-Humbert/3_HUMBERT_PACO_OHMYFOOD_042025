@@ -137,11 +137,7 @@ ul {
     width: auto;
   }
 }
-.filter:hover .filter__li, .filter:active .filter__li, .filter:focus .filter__li {
-  background: #FFFFFF;
-  opacity: 0.6;
-}
-.filter:hover .filter__dot, .filter:active .filter__dot, .filter:focus .filter__dot {
+.filter__li:hover .filter__dot, .filter__li:active .filter__dot, .filter__li:focus .filter__dot {
   color: #9356DC;
 }
 .filter__number {
@@ -156,6 +152,7 @@ ul {
   color: #7e7e7e;
   font-size: 20px;
   margin-right: 20px;
+  transition: color 0.3s;
 }
 
 /*** Restaurants ***/
@@ -332,7 +329,7 @@ ul {
 .article__price {
   font-weight: 500;
   font-size: 0.94rem;
-  transition: 1s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 .article__animation {
   position: absolute;
@@ -344,11 +341,11 @@ ul {
   right: 0;
   top: 0;
   transform: translateX(60px);
-  transition: 1s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 .article__icon {
   transform: rotate(0deg);
-  transition: 1s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 .article:hover, .article:active, .article:focus {
   cursor: pointer;

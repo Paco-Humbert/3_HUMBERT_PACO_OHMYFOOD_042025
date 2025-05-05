@@ -83,19 +83,16 @@
         @include mobile {
             width: auto;
         }
+        &:hover, &:active, &:focus {
         
-    }
-
-    &:hover, &:active, &:focus {
-        .filter__li {
-            background: $color-white;
-            opacity: 0.6;
-        }
         .filter__dot {
             color: $color-primary;
             
         }
     }
+    }
+
+    
 
     &__number {
         background-color: $color-primary;
@@ -110,6 +107,9 @@
         color: #7e7e7e;
         font-size: 20px;
         margin-right: 20px;
+        transition: color 0.3s;
+
+        
     }
 }
 
