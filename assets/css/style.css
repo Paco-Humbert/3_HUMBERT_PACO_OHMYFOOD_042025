@@ -399,14 +399,14 @@ ul {
   position: absolute;
   font-size: 24px;
   margin-right: 30px;
-  transition: 300ms;
+  transition: 0.3s;
 }
 .btn__heart__empty:hover, .btn__heart__empty:active, .btn__heart__empty:focus {
   cursor: pointer;
   background: #9356DC;
   background-clip: text;
   color: #9356DC;
-  transition: transform 300ms;
+  transition: transform 0.3s;
 }
 
 .bloc {

@@ -38,14 +38,14 @@
     position: absolute;
     font-size: 24px;
     margin-right: 30px;
-    transition:  300ms; 
+    transition:  .3s; 
     
         &:hover, &:active, &:focus {
             cursor: pointer;
             background: $color-primary;
             background-clip: text;
             color: $color-primary;
-            transition: transform 300ms;
+            transition: transform .3s;
             
         }
     
