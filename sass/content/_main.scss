@@ -63,8 +63,13 @@
     }
 
     &:hover, &:active, &:focus {
+        .filter__li {
+            background: $color-white;
+            opacity: 0.6;
+        }
         .filter__dot {
             color: $color-primary;
+            
         }
     }
 

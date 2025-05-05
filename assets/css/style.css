@@ -115,6 +115,10 @@ ul {
     width: auto;
   }
 }
+.filter:hover .filter__li, .filter:active .filter__li, .filter:focus .filter__li {
+  background: #FFFFFF;
+  opacity: 0.6;
+}
 .filter:hover .filter__dot, .filter:active .filter__dot, .filter:focus .filter__dot {
   color: #9356DC;
 }
@@ -258,19 +262,19 @@ ul {
   top: 24px;
 }
 
-.menu__list .general .article {
+.menu__main {
   animation: menu-list 1s ease both;
 }
-.menu__list .general .article:nth-child(1) {
+.menu__main:nth-child(1) {
   animation-delay: 0.2s;
 }
-.menu__list .general .article:nth-child(2) {
+.menu__main:nth-child(2) {
   animation-delay: 0.4s;
 }
-.menu__list .general .article:nth-child(3) {
+.menu__main:nth-child(3) {
   animation-delay: 0.6s;
 }
-.menu__list .general .article:nth-child(4) {
+.menu__main:nth-child(4) {
   animation-delay: 0.8s;
 }
 
@@ -390,8 +394,8 @@ ul {
 
 .btn__heart__empty {
   position: absolute;
-  color: black;
-  background: white;
+  background-color: transparent;
+  background-clip: text;
   position: absolute;
   font-size: 24px;
   margin-right: 30px;
@@ -399,7 +403,6 @@ ul {
 }
 .btn__heart__empty:hover, .btn__heart__empty:active, .btn__heart__empty:focus {
   cursor: pointer;
-  opacity: 1;
   background: #9356DC;
   background-clip: text;
   color: #9356DC;
