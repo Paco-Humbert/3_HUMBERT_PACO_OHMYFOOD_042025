@@ -84,7 +84,8 @@
             width: auto;
         }
         &:hover, &:active, &:focus {
-        
+            @include box-shadow-1;
+
         .filter__dot {
             color: $color-primary;
             
@@ -133,6 +134,9 @@
     position: relative;
     border-radius: 15px;
     @include box-shadow-2;
+    &:hover, &:active, &:focus {
+        @include box-shadow-1
+    }
     
     
 
@@ -165,6 +169,8 @@
         justify-content: space-between;
         align-items: center;
         padding: 20px 20px 10px 20px;
+
+        
     }
 
     &__title {

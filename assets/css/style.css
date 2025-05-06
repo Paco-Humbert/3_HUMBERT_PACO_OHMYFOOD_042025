@@ -137,6 +137,9 @@ ul {
     width: auto;
   }
 }
+.filter__li:hover, .filter__li:active, .filter__li:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .filter__li:hover .filter__dot, .filter__li:active .filter__dot, .filter__li:focus .filter__dot {
   color: #9356DC;
 }
@@ -175,6 +178,9 @@ ul {
   position: relative;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.card:hover, .card:active, .card:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .card__img {
   display: flex;
@@ -345,7 +351,7 @@ ul {
 }
 .article__icon {
   transform: rotate(0deg);
-  transition: 0.6s ease-in-out;
+  transition: s ease-in-out;
 }
 .article:hover, .article:active, .article:focus {
   cursor: pointer;
@@ -355,9 +361,6 @@ ul {
 }
 .article:hover .article__animation, .article:active .article__animation, .article:focus .article__animation {
   transform: translateX(0);
-}
-.article:hover .article__icon, .article:active .article__icon, .article:focus .article__icon {
-  transform: rotate(360deg);
 }
 
 .btn {
@@ -393,8 +396,15 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: none;
 }
-
+.btn__heart:hover, .btn__heart:active, .btn__heart:focus {
+  cursor: pointer;
+  background-color: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  color: #9356DC;
+  transition: transform 1s;
+}
 .btn__heart__empty {
   position: absolute;
   background-color: transparent;
@@ -403,13 +413,6 @@ ul {
   font-size: 24px;
   margin-right: 30px;
   transition: 0.3s;
-}
-.btn__heart__empty:hover, .btn__heart__empty:active, .btn__heart__empty:focus {
-  cursor: pointer;
-  background: #9356DC;
-  background-clip: text;
-  color: #9356DC;
-  transition: transform 0.3s;
 }
 
 .bloc {

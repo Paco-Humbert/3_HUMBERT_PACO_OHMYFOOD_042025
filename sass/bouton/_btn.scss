@@ -27,11 +27,20 @@
 .btn__heart {
     position: relative;
     @include flexbox-center;
+    background-color: none;
     
     
-}    
+    &:hover, &:active, &:focus {
+            cursor: pointer;
+            background-color: $color-gradient;
+            background-clip: text;
+            color: $color-primary;
+            transition: transform 1s;
+            
+            
+    }
 
-.btn__heart__empty {
+    &__empty {
     position: absolute;
     background-color: transparent;
     background-clip: text;
@@ -40,14 +49,10 @@
     margin-right: 30px;
     transition:  .3s; 
     
-        &:hover, &:active, &:focus {
-            cursor: pointer;
-            background: $color-primary;
-            background-clip: text;
-            color: $color-primary;
-            transition: transform .3s;
-            
-        }
+        
     
 }
+}    
+
+
 
