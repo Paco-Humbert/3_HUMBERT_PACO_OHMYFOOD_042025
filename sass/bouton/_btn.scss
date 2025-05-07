@@ -31,6 +31,7 @@
     
     
     
+    
     &:hover .fa-solid, &:active .fa-solid, &:focus .fa-solid {  /*** état après **/
             cursor: pointer;
             transition: 2s;
@@ -40,11 +41,12 @@
 
     .fa-regular {
     position: absolute;
-     
+    margin-right: 30px;
     }
 
     .fa-solid {  /*** état avant **/
         opacity: 0;
+        margin-right: 30px;
         position: absolute;
         background: $color-gradient;
         background-clip: text;

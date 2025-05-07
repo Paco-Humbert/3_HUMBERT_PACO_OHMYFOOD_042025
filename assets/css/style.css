@@ -66,7 +66,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 2s 2s ease-out both;
+  animation: loader 1s 1s ease-out both;
 }
 .loader__bloc {
   display: flex;
@@ -79,15 +79,6 @@ ul {
   border-radius: 50px;
   margin: 10px;
   animation: primary 1s ease-in-out;
-}
-.loader__point:nth-child(2) {
-  menu-delay: 0.2s;
-}
-.loader__point:nth-child(3) {
-  menu-delay: 0.4s;
-}
-.loader__point:nth-child(4) {
-  menu-delay: 0.6s;
 }
 
 .location {
@@ -148,9 +139,6 @@ ul {
   .filter__li {
     width: auto;
   }
-}
-.filter__li:hover, .filter__li:active, .filter__li:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .filter__li:hover .filter__dot, .filter__li:active .filter__dot, .filter__li:focus .filter__dot {
   color: #9356DC;
@@ -418,9 +406,11 @@ ul {
 }
 .btn__heart .fa-regular {
   position: absolute;
+  margin-right: 30px;
 }
 .btn__heart .fa-solid { /*** état avant **/
   opacity: 0;
+  margin-right: 30px;
   position: absolute;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
