@@ -9,13 +9,37 @@
     }
 }
 
+@keyframes primary {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(15px);
+        background-color: $color-secondary;
+    }
+    70% {
+        transform: translateY(-10px);
+        background-color: $color-secondary;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 @keyframes loader {
     85% {
         opacity: 0.80;
     }
+    99% {
+        width: 100%;
+        height: 100%;
+    }
+
     100% {
         opacity: 0;
         z-index: -10;
+        width: 0;
+        height: 0;
     }
 }
 
