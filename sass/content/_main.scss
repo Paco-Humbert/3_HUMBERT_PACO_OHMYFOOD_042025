@@ -19,7 +19,6 @@
         border-radius: 50px;
         margin: 10px;
         animation: primary 1s ease-in-out;
-        
     }
 }
 
@@ -38,7 +37,6 @@
     &__dot {
         margin-right: 15px;
     }
-
 }
 
 /*** Presentation / Fonctionnement ***/
@@ -46,7 +44,6 @@
 .functioning { 
     text-align: center;
     padding: 40px 25px 70px 25px;
-    
 
     &__subtitle {
         font-size: 18px;
@@ -70,7 +67,6 @@
         @include mobile {
             flex-direction: column;
         }
-        
     }
 
     &__li {
@@ -85,13 +81,12 @@
             width: auto;
         }
         &:hover, &:active, &:focus {
-            
 
-        .filter__dot {
-            color: $color-primary;
-            
+            .filter__dot {
+                color: $color-primary;
+                
+            }
         }
-    }
     }
 
     
@@ -119,7 +114,6 @@
 
 
 .cards {
-   
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
@@ -138,8 +132,6 @@
     &:hover, &:active, &:focus {
         @include box-shadow-1
     }
-    
-    
 
     &__img {
         display: flex;
@@ -153,7 +145,6 @@
     }
 
     &__new {
-        
         position: absolute;
         background-color: $color-tertiary;
         color: #008766;
@@ -170,8 +161,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 20px 20px 10px 20px;
-
-        
     }
 
     &__title {
@@ -183,8 +172,6 @@
         font-size: 1.063rem;
         font-weight: 300;
     }
-
-    
 }
 
 

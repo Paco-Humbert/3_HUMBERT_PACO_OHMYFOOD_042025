@@ -295,11 +295,13 @@ ul {
   align-items: flex-end;
   justify-content: space-between;
   background-color: #FFFFFF;
-  overflow: hidden;
   border-radius: 15px;
   margin-bottom: 10px;
   padding: 10px 20px 10px 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .article:nth-child(1) {
   animation-delay: 0.2s;
@@ -315,27 +317,29 @@ ul {
 }
 .article h4 .article__content {
   display: flex;
-  text-overflow: ellipsis;
-  overflow: hidden;
   max-width: 100%;
   flex: 1;
   min-width: 0;
 }
+.article__content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .article h4 {
   margin: 0 0 4px 0;
   font-size: 1.125rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .article__subtitle {
   font-weight: 300;
   font-size: 0.94rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .article__price {
   font-weight: 500;
   font-size: 0.94rem;
   transition: 0.6s ease-in-out;
+  margin-left: 20px;
 }
 .article__animation {
   position: absolute;
