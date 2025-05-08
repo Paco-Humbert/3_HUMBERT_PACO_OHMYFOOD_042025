@@ -24,14 +24,12 @@
 .btn__heart {
     position: relative;
     @include flexbox-center;
-    background-color: none;
     font-size: 24px;
     
     &:hover .fa-solid, &:active .fa-solid, &:focus .fa-solid {  /*** état après **/
             cursor: pointer;
             transition: 2s;
             opacity: 1;
-            
     }
 
     .fa-regular {
