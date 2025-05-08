@@ -5,6 +5,13 @@ body {
     @include mobile {
         max-width: 100%;
     }
+    @include tablet {
+        width: auto;
+    }
+
+    @include desktop {
+        width: auto;
+    }
 }
 
 a {

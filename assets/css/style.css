@@ -13,6 +13,16 @@ body {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 1024px) {
+  body {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: auto;
+  }
+}
 
 a {
   color: black;
@@ -126,6 +136,11 @@ ul {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1024px) {
+  .filter__ul {
+    flex-direction: column;
+  }
+}
 .filter__li {
   width: 335px;
   font-weight: 500;
@@ -135,7 +150,7 @@ ul {
   margin: 0 14px;
   background-color: #eaeaea;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .filter__li {
     width: auto;
   }
@@ -148,14 +163,25 @@ ul {
   color: #F6F6F6;
   border-radius: 50px;
   padding: 5px 10px 5px 10px;
-  margin-left: -15px;
-  margin-right: 20px;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .filter__number {
+    width: auto;
+    margin-right: 10px;
+  }
 }
 .filter__dot {
   color: #7e7e7e;
   font-size: 20px;
   margin-right: 20px;
   transition: color 0.3s;
+}
+@media screen and (max-width: 1024px) {
+  .filter__dot {
+    margin-right: 5px;
+  }
 }
 
 /*** Restaurants ***/
@@ -424,7 +450,6 @@ ul {
 
 .bloc {
   margin: auto;
-  max-width: 1440px;
 }
 
 .footer {

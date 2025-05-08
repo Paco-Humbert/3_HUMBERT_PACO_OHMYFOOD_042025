@@ -67,6 +67,10 @@
         @include mobile {
             flex-direction: column;
         }
+        @include tablet {
+            flex-direction: column;
+        }
+        
     }
 
     &__li {
@@ -77,27 +81,30 @@
         padding: 25px 35px 25px 0;
         margin: 0 14px;
         background-color: #eaeaea;
-        @include mobile {
+        @include tablet {
             width: auto;
         }
+        
         &:hover, &:active, &:focus {
 
             .filter__dot {
                 color: $color-primary;
-                
             }
         }
     }
-
-    
 
     &__number {
         background-color: $color-primary;
         color: $color-secondary;
         border-radius: 50px;
         padding: 5px 10px 5px 10px;
-        margin-left: -15px;
-        margin-right: 20px;
+        margin-left: -10px;
+        margin-right: 10px;
+        
+        @include mobile {
+            width: auto;
+            margin-right: 10px;
+        }
     }
 
     &__dot {
@@ -105,8 +112,9 @@
         font-size: 20px;
         margin-right: 20px;
         transition: color 0.3s;
-
-        
+        @include tablet {
+            margin-right: 5px;
+        }
     }
 }
 
@@ -173,6 +181,3 @@
         font-weight: 300;
     }
 }
-
-
-
