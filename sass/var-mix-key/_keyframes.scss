@@ -28,7 +28,7 @@
 
 @keyframes loader {
     85% {
-        opacity: 0.80;
+        opacity: 0.8;
     }
     99% {
         width: 100%;
@@ -36,7 +36,7 @@
     }
 
     100% {
-        opacity: 0;
+        opacity: 1;
         z-index: -10;
         width: 0;
         height: 0;

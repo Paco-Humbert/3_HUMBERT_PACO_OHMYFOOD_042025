@@ -137,7 +137,7 @@
 
     &__icon {
         transform: rotate(0deg);
-        transition: s ease-in-out;
+        transition: .6s ease-in-out;
     }
 
     &:hover, &:active, &:focus {
@@ -149,6 +149,10 @@
 
         .article__animation {
             transform: translateX(0);
+        }
+
+        .article__icon {
+            transform: rotate(360deg);
         }
     }
 }

@@ -344,6 +344,24 @@ ul {
 .article:nth-child(4) {
   animation-delay: 0.8s;
 }
+.article:nth-child(5) {
+  animation-delay: 1s;
+}
+.article:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.article:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.article:nth-child(8) {
+  animation-delay: 1.6s;
+}
+.article:nth-child(9) {
+  animation-delay: 1.8s;
+}
+.article:nth-child(10) {
+  animation-delay: 2s;
+}
 .article h4 .article__content {
   display: flex;
   max-width: 100%;
@@ -384,7 +402,7 @@ ul {
 }
 .article__icon {
   transform: rotate(0deg);
-  transition: s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 .article:hover, .article:active, .article:focus {
   cursor: pointer;
@@ -394,6 +412,9 @@ ul {
 }
 .article:hover .article__animation, .article:active .article__animation, .article:focus .article__animation {
   transform: translateX(0);
+}
+.article:hover .article__icon, .article:active .article__icon, .article:focus .article__icon {
+  transform: rotate(360deg);
 }
 
 .btn {
@@ -515,7 +536,7 @@ ul {
     height: 100%;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
     z-index: -10;
     width: 0;
     height: 0;
