@@ -1,25 +1,37 @@
 .footer {
     background-color: $color-grey;
     padding: 30px 20px 20px 30px;
-    
+    @include tablet {
+        padding: 16px;
+    }
 
     &__first {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end; 
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 40px;
-    
+
     @include mobile {
-            @include flex-footer
-        }
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 16px;
+    }
 
     @include tablet {
-            @include flex-footer
-        }
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 16px;
     }
-    
 
+    
+    }
+      
     &__title {
     font-size: 1.125rem;
     font-family: $font-title;
@@ -28,49 +40,27 @@
     margin-right: 30px;
     padding-left: 20px;
 
-    @include mobile {
-        order: 1;
-        
-    }
     @include tablet {
-        order: 1 ;
-       
+        margin-top: 16px;
     }
-    @include desktop {
-        order: 5;
-        
+
     }
-    }
-}
-
-
-.footer__list {
-        display: flex;
-        flex-direction: row;
-        
-        @include mobile {
-            display: flex;
-            flex-direction: column;
-        }
-
-        @include tablet {
-            display: flex;
-            flex-direction: column;
-        }
     
-}
-
-li a {
+    & li a {
     color: $color-white;
-    
-}
+    }
 
-ul {
+    & ul {
     padding: 0;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    
+    flex-direction: row;
+    gap: 35px;
+    @include tablet {
+        @include flex-footer;
+        padding: 16px;
+        margin-top: 0;
+    }
+    }
 }
 
 .footer-dot {
