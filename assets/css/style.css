@@ -18,7 +18,7 @@ body {
     width: auto;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
   body {
     width: auto;
   }
@@ -286,43 +286,46 @@ ul {
   background-color: #F6F6F6;
   margin-top: -50px;
   position: relative;
+  margin: -20px 190px 0 190px;
 }
 @media screen and (max-width: 768px) {
   .menu {
     justify-content: center;
     display: flex;
-    margin: -20px 90px 0 90px;
+    margin: -50px 0 0 0;
   }
 }
 .menu__title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: "Shrikhand", cursive;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
   .menu__title {
     justify-content: center;
+    align-items: center;
   }
 }
 .menu h2 {
   font-size: 1.75rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
   .menu h2 {
     margin-right: 50px;
+    padding-right: 0;
   }
 }
 .menu__main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .menu__list {
   padding: 0;
   overflow: hidden;
   margin-left: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
   .menu__list {
     width: 634px;
   }
@@ -491,14 +494,13 @@ ul {
 .bloc {
   margin: auto;
 }
+.bloc h2 {
+  padding-left: 180px;
+}
 @media screen and (max-width: 768px) {
   .bloc h2 {
-    padding-left: 180px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .bloc h2 {
-    padding: 0 0 20px 0;
+    padding-left: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -518,7 +520,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex-wrap: nowrap;
     align-items: flex-start;
     gap: 0;
   }
@@ -528,12 +529,10 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex-wrap: nowrap;
     align-items: flex-start;
     gap: 0;
   }
 }
-
 .footer__title {
   font-size: 1.125rem;
   font-family: "Shrikhand", cursive;
@@ -544,32 +543,17 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .footer__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    gap: 0;
+    order: 1;
   }
 }
 @media screen and (max-width: 1024px) {
   .footer__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    gap: 0;
+    order: 1;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1440px) {
   .footer__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    gap: 0;
+    order: 5;
   }
 }
 
