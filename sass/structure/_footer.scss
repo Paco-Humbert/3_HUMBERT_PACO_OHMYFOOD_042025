@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-grey;
-    padding: 30px 20px 20px 30px;
+    padding: 30px 60px 20px 30px;
     @include tablet {
         padding: 16px;
     }
@@ -11,7 +11,7 @@
     justify-content: flex-end; 
     align-items: center;
     flex-wrap: nowrap;
-    gap: 40px;
+    gap: 80px;
 
     @include mobile {
         display: flex;
