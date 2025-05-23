@@ -509,7 +509,7 @@ ul {
 
 .footer {
   background-color: #353535;
-  padding: 30px 60px 20px 30px;
+  padding: 30px 50px 20px 30px;
 }
 @media screen and (max-width: 1024px) {
   .footer {
