@@ -1,3 +1,12 @@
 .bloc {
     margin: auto;
+
+    & h2 {
+        @include desktop {
+        padding-left: 180px;
+    }
+        @include tablet {
+            padding: 0 0 20px 0;
+        }
+    }
 }

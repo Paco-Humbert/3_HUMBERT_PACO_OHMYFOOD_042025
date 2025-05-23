@@ -31,7 +31,7 @@
 
     &__txt {
         font-size: 16px;
-        font-weight: 500px;
+        font-weight: 500;
     }
 
     &__dot {
@@ -45,6 +45,13 @@
     text-align: center;
     padding: 40px 25px 70px 25px;
 
+    & h2 {
+        font-size: 2.5rem;
+        @include mobile {
+        font-size: 1.5rem;
+    }
+    }
+    
     &__subtitle {
         font-size: 18px;
         font-weight: 300;
@@ -56,29 +63,51 @@
 
 .filter{
     background-color: $color-secondary;
+    gap: 25px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    & h2 {
+        padding-left: 180px;
+    }
+
+    & span {
+        font-size: 1rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        
+    }
 
     &__ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 20px;
-        padding: 28px 0 0 0;
+        gap: 25px;
+        padding: 28px 180px 0 180px;
         margin: 0;
+        
+    
+        
         @include mobile {
             flex-direction: column;
+            padding: 0 0 0 0;
+            
         }
         @include tablet {
             flex-direction: column;
+            padding: 0 0 0 0;
+            
         }
     }
 
     &__li {
-        width: 335px;
+        width: 100%;
         font-weight: 500;
         @include box-shadow-2;
         border-radius: 20px;
         padding: 25px 35px 25px 0;
-        margin: 0 14px;
+        
         background-color: #eaeaea;
         @include tablet {
             width: auto;
@@ -119,16 +148,28 @@
 
 /*** Restaurants ***/
 
-
+.restaurants {
+    h2 {
+    padding-left: 180px;
+}
+}
 .cards {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 50px 100px;
-    padding: 25px 0 0 0;
+    padding: 25px 180px 0 180px;
+    
+    
     @include mobile {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 0 0 0 0;
     }
 }    
 .card {

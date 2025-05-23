@@ -4,6 +4,15 @@
     align-items: center;
 }
 
+@mixin flex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 0;
+}
+
 @mixin box-shadow-1 {
     box-shadow: 0px 4px 4px rgba(0,0,0,.25);
 } 
@@ -19,7 +28,7 @@
 }
 
 @mixin desktop {
-    @media screen and (min-width: map-get($breakpoints, mobile)){
+    @media screen and (max-width: map-get($breakpoints, mobile)){
         @content;
     }
 }
